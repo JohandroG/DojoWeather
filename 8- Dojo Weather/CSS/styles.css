@@ -1,0 +1,165 @@
+*{
+    font-family: cursive;
+}
+
+/*===================================Nav config=================================================*/
+
+nav{
+    background-color: rgb(159, 197, 248);
+    color: white;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav>h1{
+    font-size: 50px;
+    margin: 25px 0px;
+    margin-left: 200px;
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 200px;
+    align-items: center;
+}
+
+nav>ul>*{
+    margin: 5px 40px;
+    font-size: 30px;
+}
+
+/*===================================Main Boxes config=================================================*/
+
+.body{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 190px;
+    height: 1000px;
+}
+
+.topside{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px;
+    border-bottom: 3px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.downside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    padding: 15px 30px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    position: fixed;
+    width: 1000px;
+    bottom: 20px;
+    left: 13%;
+    right: 20%;
+    background-color: white;
+    height: 160px;
+}
+
+/*===================================Details config=================================================*/
+
+.topside>h1{
+    font-size: 40px;
+    margin-right: 500px;
+}
+
+.topside>label{
+    font-size: 25px;
+}
+
+.topside>select{
+    width: 70px;
+    font-size: 30px;
+    border: 5px solid black;
+}
+
+.day>h2{
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.day>img{
+    height: 150px;
+    border-radius: 50%;
+}
+
+.day>p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 35px;
+    width: 160px;
+    font-weight: 700;
+}
+
+.redtemp{
+    color: rgb(207, 44, 41);
+}
+
+.bluetemp{
+    color: rgb(43, 120, 228);
+}
+
+.maininfo>p{
+    font-size: 25px;
+
+}
+
+.maininfo{
+    margin: 0px 50px;
+}
+
+#cookie{
+    height: 80px;
+    margin-left: 30px;
+}
+
+#acceptcookies{
+    background-color: rgb(159, 197, 248);
+    color: black;
+    border: 3px solid black;
+    box-shadow: 4px 4px;
+    width: 250px;
+    height: 40px;
+    margin: 20px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/*Good trick XD*/ 
+
+.redtemp::after, .bluetemp::after{
+    content: "°";
+}
+

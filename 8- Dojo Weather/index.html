@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dojo Weather
+        </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./CSS/normalize.css"/>
+        <link rel="stylesheet" href="./CSS/styles.css"/>
+    </head>
+
+    <body>
+        
+        <nav>
+            <h1>DojoWeather</h1>
+            <ul class="navitems">
+                <li class="city">Burbank</li>
+                <li class="city">Chicago</li>
+                <li class="city">Dallas</li>
+            </ul>
+        </nav>
+
+        <div class="body">
+            <div class="topside">
+                <h1>San Jose</h1>
+                <label for="tempdescrip">show temperature in</label>
+                <select name="temp" class="grades" id="selectTemp" onchange="convert(this)">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div> <!--topside ends here-->
+
+            
+            <div class="downside">
+                <div class="day">
+                    <h2>Today</h2>
+                    <img id="wheatersimbol" src="./IMG/some_rain.png"/>
+                    <p>some rain</p>
+                    <div class="temp"><span class="redtemp" id="temp1">24</span><span class="bluetemp" id="temp2">18</span></div>
+                </div>
+                <div class="day">
+                    <h2>Tomorrow</h2>
+                    <img id="wheatersimbol" src="./IMG/some_sun.png"/>
+                    <p>some sun</p>
+                    <div class="temp"><span class="redtemp" id="temp3">27</span><span class="bluetemp" id="temp4">19</span></div>
+                </div>
+                <div class="day">
+                    <h2>Friday</h2>
+                    <img id="wheatersimbol" src="./IMG/some_clouds.png"/>
+                    <p>some clouds</p>
+                    <div class="temp"><span class="redtemp" id="temp5">21</span><span class="bluetemp" id="temp6">16</span></div>
+                </div>
+                <div class="day">
+                    <h2>Saturday</h2>
+                    <img id="wheatersimbol" src="./IMG/some_sun.png"/>
+                    <p>some sun</p>
+                    <div class="temp"><span class="redtemp" id="temp7">26</span><span class="bluetemp" id="temp8">21</span></div>
+                </div>
+            </div> <!--downside ends here-->
+                
+            <div class="banner">
+                <img id="cookie" src="./IMG/cookie.png"/>
+                <div class="maininfo">
+                    <h1>Stop! Cookie time</h1>
+                    <p>
+                        We use cookies (sadly not the edible ones) to personalize
+                        content and ads, to provide social media features and to analyse our traffic.
+                        <a href="https://www.kaspersky.com/resource-center/definitions/cookies">Read more...</a>
+                    </p>
+                </div>
+                <button id="acceptcookies" class="acceptbutton" type="button">I Accept</button>
+            </div><!--banner ends here-->
+        </div><!--body ends here-->
+
+        <script src="./JS/index.js"></script>
+    </body>
+</html>
